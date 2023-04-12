@@ -1,22 +1,26 @@
-* {
-    background-color: rgba(68, 117, 136, 0.548) ;
-}
 
 #container {
     width: 100%;
     height: 100%;
+    background-color: rgba(68, 117, 136, 0.548);
+    display: flex;
 }
 
 .card {
     width: 300px;
+    border: 2px solid black;
     border-radius: 10px;
-    display: flex;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .card-header {
     height: 200px;
+    width: 100%;
 }
+
 .card-text {
     padding: 30px;
     font-size: 14px;
