@@ -14,6 +14,8 @@
     align-items: center;
     gap : 15px;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -29,11 +31,38 @@
     transform: translateY(-15px);
 }
 
+.card-header {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
 .coeur {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
-    background-color: red;
+    background-color: rgb(237, 53, 96);
+    position: absolute;
+    top: 0;
+    left: -50px;
+    font-size: 20px;
+    transition: 1s;
+    opacity: 0;
+    border-radius: 10px;
 }
+
+.card:hover .card-header img {
+    transform: scale(1.1);
+}
+
+.card:hover .coeur {
+    left: 0;
+    opacity: 1;
+}
+
 img {
     height: 200px;
     width: 300px;
