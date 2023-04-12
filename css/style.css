@@ -1,0 +1,29 @@
+* {
+    background-color: rgba(68, 117, 136, 0.548) ;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid black;
+}
+
+.card-header {
+    height: 200px;
+}
+.card-text {
+    padding: 30px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
